@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pop">
+      <input class="Inp" id="display" readonly />
+      <div class="all">
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="toDisplay('%')">%</button>
+        <button onclick="toDisplay('.')">.</button>
+        <button onclick="toDisplay('+')" class="col">+</button>
+        <button onclick="toDisplay('1')">1</button>
+        <button onclick="toDisplay('2')">2</button>
+        <button onclick="toDisplay('3')">3</button>
+        <button onclick="toDisplay('-')" class="col">-</button>
+        <button onclick="toDisplay('4')">4</button>
+        <button onclick="toDisplay('5')">5</button>
+        <button onclick="toDisplay('6')">6</button>
+        <button onclick="toDisplay('*')" class="col">x</button>
+        <button onclick="toDisplay('7')">7</button>
+        <button onclick="toDisplay('8')">8</button>
+        <button onclick="toDisplay('9')">9</button>
+        <button onclick="toDisplay('/')" class="col">/</button>
+        <button onclick="toDisplay('0')" class="p">0</button>
+        <button onclick="calculate()" class="p1">=</button>
+      </div>
+    </div>
+    <script>
+      const display = document.getElementById("display");
+      function clearDisplay() {
+        display.value = "";
+      }
+      function toDisplay(input) {
+        display.value += input;
+      }
+      function calculate() {
+        try {
+          if (display.value === "") return;
+          const result = eval(display.value);
+          if (!isFinite(result)) {
+            display.value = "ERROR";
+          } else {
+            display.value = result;
+          }
+        } catch (error) {
+          display.value = "ERROR";
+        }
+      }
+    </script>
+  </body>
+</html>

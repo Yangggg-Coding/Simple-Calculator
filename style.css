@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(89, 83, 83);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  height: 100vh;
+}
+.pop {
+  background-color: rgb(44, 43, 43);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+.all {
+  text-align: center;
+  line-height: 30px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  row-gap: 15px;
+}
+.p {
+  margin-left: 120px;
+}
+.p1 {
+  margin-left: 120px;
+  background-color: orange;
+}
+.col {
+  background-color: orange;
+}
+.Inp {
+  width: 200px;
+  padding: 20px 15px;
+  text-align: right;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: rgb(44, 43, 43);
+  border: 0px;
+  color: white;
+}
+button {
+  padding: 5px 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.all1 {
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.all2,
+.all3,
+.all4 {
+  border-radius: 50%;
+}
