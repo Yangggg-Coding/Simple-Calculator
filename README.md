@@ -79,5 +79,3 @@ This project was created as a beginner **JavaScript practice project** to improv
 * User input
 * Conditional statements
 * Error handling
-
-
